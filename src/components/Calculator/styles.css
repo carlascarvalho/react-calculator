@@ -57,3 +57,21 @@
   background-color: #a5a5a5;
   color: #000;
 }
+
+@media screen and (min-width: 400px) {
+  .calculator {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .calculator {
+    font-size: 46px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .calculator {
+    font-size: 50px;
+  }
+}
