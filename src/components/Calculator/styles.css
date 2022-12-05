@@ -20,6 +20,7 @@
   width: 100%;
   padding: 0.5em 10px 10px 10px;
   font-size: 2.5em;
+  overflow: hidden;
 }
 
 .keyboard {
@@ -27,6 +28,10 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: var(--keyboard-gap);
+
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .keyboard div {
@@ -37,6 +42,10 @@
   width: var(--button-size);
   height: var(--button-size);
   border-radius: 50%;
+}
+
+.keyboard div:active {
+  opacity: 0.7;
 }
 
 .keyboard div.large {
