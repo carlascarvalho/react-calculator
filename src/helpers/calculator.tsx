@@ -18,3 +18,13 @@ export function resolveOperation(
       return firstNum;
   }
 }
+
+export function getUpdatedNumber(
+  number: string,
+  digit: string,
+  replace: boolean = false
+): string {
+  const replaceNumber = number === '0' || replace;
+
+  return replaceNumber ? digit : number + digit;
+}
