@@ -158,8 +158,7 @@ const Calculator = () => {
             dispatcher({ type: 'number', payload: { value: '0' } })
           }
         >
-          <div>0</div>
-          <div></div>
+          0
         </div>
         <div
           role='button'
