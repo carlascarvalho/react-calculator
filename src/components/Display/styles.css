@@ -1,0 +1,11 @@
+.display {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  padding: 0.5em 10px 10px 10px;
+  font-size: 1em;
+  overflow: hidden;
+  flex: 1;
+}

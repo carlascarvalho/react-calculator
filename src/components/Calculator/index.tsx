@@ -1,4 +1,5 @@
 import useCalculator from '../../hooks/useCalculator';
+import Display from '../Display';
 import './styles.css';
 
 const Calculator = () => {
@@ -6,9 +7,11 @@ const Calculator = () => {
 
   return (
     <div className='calculator'>
-      <div className='display'>
-        {state.displayFirstNumber ? state.firstNumber : state.secondNumber}
-      </div>
+      <Display
+        value={
+          state.displayFirstNumber ? state.firstNumber : state.secondNumber
+        }
+      />
       <div className='keyboard'>
         <div
           role='button'
